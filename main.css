@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap');
+
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-collapse: collapse;
+}
+header>nav{
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px #dbdbdb;
+}
+
+.navbar-brand img{
+    width: 120px;
+}
+.section-title{
+    padding: 20px 0;
+}
+.section-title h2{
+    margin: 40px  auto  20px auto;
+    text-shadow: 1px 1px 1px rgb(8, 8, 8);
+    font-size: 25px;
+    border-left: 5px solid red;
+    width: 250px;   
+}
+.section-title p{
+    font-size: 12px;
+}
+@media screen and (max-width: 600px) and (min-width: 900px), (min-width: 1100px)  {
+    .section-title h2{
+        font-size: 40px;
+        width: 400px;
+    }
+    .section-title p{
+        font-size: 15px;
+    }
+  }
+.nav-item a{
+    font-weight: 500;
+    transition: .6s;
+}
+.hover_cl li a:hover{
+    color: rgb(183, 0, 255) !important;
+
+}
+.btn-buy-now{
+
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 12px 8px;
+    background-color: rgb(236, 51, 181);
+    width: 160px;
+    border-radius: 6px;
+    margin: auto;
+    font-weight: 600;
+    color: white;
+    letter-spacing: 1px;
+    transition: .250s;
+}
+
+.section.category-product{
+    padding: 55px 0px;
+}
+section.category-product .card {
+    background: #efefef94;
+}
+
+.card-body img{
+    width: 90%;
+    height: 190px;
+    margin: auto;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+    cursor: pointer;
+}
+.card-body img:hover{
+    transform: scale(0.9);
+}
+.card-body{
+    overflow: hidden;
+}
+
+.card-body h4{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 12px 0; 
+}
+.btn-take-me{
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 12px 8px;
+    background-color: rgb(236, 51, 181);
+    width: 160px;
+    border-radius: 6px;
+    margin: auto;
+    font-weight: 600;
+    color: white;
+    letter-spacing: 1px;
+    transition: .250s;
+}
+.btn-take-me:hover{
+    background-color: transparent;
+    color: black;
+    outline: 1px solid rgb(236, 51, 181);
+}
+.row img a{
+    position: absolute;
+    top: 0;
+}
+
+footer .img_box{
+    width: 100px;
+    height: 100px;
+}
+footer .img_box img{
+    max-width: 100%;
+    height: auto;
+}
+.downlod_img{
+    width: 120px;
+    display: flex;
+}
+.downlod_img img{
+    width: 100%;
+    cursor: pointer;
+}
+
+.col-lg-3 h2{
+    margin-top: 20px;
+}
+.footer-list li{
+    transition: .3s;
+    padding: 5px 0;
+    cursor: pointer;
+}
+.footer-list li:hover{
+    color: rgb(183, 0, 255);
+}
+hr{
+    background-color: red;
+    padding: 1.2px;
+}
+.copyright-text {
+    background-color: rgb(10, 0, 0);
+    padding: 10px 0;
+    color: white;
+    font-weight: 500;
+}
+.footer-list li:hover{
+    transform: translateX(10px);
+    list-style-type: circle ;
+}
+.loading{
+    width: 100%;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+}
+.ami{
+    margin-bottom: 10%;
+}
+.ht img{
+    width: 100%;
+}
+.brand{
+    margin: 60px 0px;
+}
+.brand img{
+    width: 200px;
+    margin: auto;
+    filter: grayscale(100%);
+    cursor: pointer;
+    transition: .3s;
+}
+.box_img img:hover{
+    filter: grayscale(0%);
+}
+.box_img{
+    margin: 40px auto;
+    display: flex;
+}
+/* ========================================= */
+
+
+.video-background-holder {
+  position: relative;
+  background-color: black;
+  height: calc(100vh - 72px);
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.video-background-holder video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.video-background-content {
+  position: relative;
+  z-index: 2;
+}
+
+.video-background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+.custom_sc{
+    max-width: 800px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+
+.box{
+    
+    width: 800px;
+    
+    
+}
+.box form{
+    inset: 3.5px;
+    margin-bottom: 120px;
+    
+    
+}
+
+.box form .input_Box{
+    position: relative;
+    width: 700px;
+    margin: auto;
+}
+.box form .input_Box input{
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    color: #23242a;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    z-index: 10;
+}
+.box form .input_Box input[type=text]{
+    font-weight: 500;
+}
+.box form .input_Box span{
+    position: absolute;
+    left:  12px;
+    bottom: 1px;
+    padding: 20px 0px 10px;
+    pointer-events: none;
+    color: #2baaff;
+    font-size: 1.5em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+.box form .input_Box input:valid ~ span,
+.box form .input_Box input:focus ~ span{
+    color: white;
+    font-size: 0.75em;
+    transform: translateY(-34px);
+}
+.box form .input_Box i{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.box form .input_Box input:valid ~ i,
+.box form .input_Box input:focus ~ i{
+    height: 44px;
+}
+
+
+
+.box form input[type="submit"]{
+    border: none;
+    outline: none;
+    padding:  9px 25px;
+    background: white;
+    cursor: pointer;
+    font-size: 0.9em;
+    font-weight: 600;
+    margin-top: 50px;
+    width: 100px;
+    border-radius: 4px;
+}
+.box form  input[type="submit"]:active{
+    opacity: 0.8;
+}
+
+
+.follow-us-icon i {
+    font-size: 46px;
+    /* gap: 16px; */
+    margin: 0 20px;
+    /* display: grid; */
+    gap: 10px;
+    align-content: center;
+    justify-content: space-around;
+    justify-items: stretch;
+    column-count: 4;
+    display: inline-block;
+    transition: .3s;
+}
+.follow-us-icon i:hover{
+    color: rgb(183, 0, 255);
+}
+.category-product a{
+    text-decoration: none;
+}
+.Shop a{
+    text-decoration: none;
+}
